@@ -1,0 +1,153 @@
+slide 1:
+- Giới thiệu java
+- tính chât: encapsulation, abstraction, inheritance, polymorphism
+- so sánh java với C++ và C#
+
+slide2:
+- cách đặt tên biến, class, methods
+- các kí tự đặc biệt: \t; \n;...
+- convert chuỗi String với +
+
+slide3:
+- convert từ kiểu int sang String và ngược lại
+- So sánh 2 chuỗi String
+- format number: tiền tệ, phần trăm,...
+- import các packpage
+
+slide4:
+- Đóng gói (encapsulation): thể hiện qua hàm set(), get(), có thể nhìn thấy 1 vài data, methods hoặc có thể ẩn.
+- public: có thể truy cập từ các class khác.
+- private: không cho truy cập từ class khác
+- constructor (hàm tạo): create objects and thể hiện của class, phải sử dụng cùng tên với class
+- methods's name: không chứa từ khóa của java, k chứa space, không bắt đầu là số, quy tắc giống với tên biến (bắt đầu chữ cái, $, gạch dưới)
+- static methods: giống class methods, nhưng không tham chiếu tới biến trong 1 class, không xuất hiện trong variables or methods directly(hàm set(), get()), không sử dụng bên trong 1 static methods.
+- Primitive types (kiểu tham trị, kiểu nguyên thủy):không thể thay đổi trực tiếp giá trị của biến nhưng chỉ phương thức mới có thể thay đổi bằng câu lệnh trả về(thay đổi giá trị trực tiếp)
+- reference type (kiểu tham chiếu, kiểu object): phương thức đó cũng nhận giá trị của biến và con trỏ tới đối tượng, phương thức có thể thay đổi giá trị của đối tượng (thay đổi qua hàm set(), get ())
+- overload: có nhiều methods cùng tên, nhưng khác giá trị truyền vào và câu lệnh. Khi call methods, main xét giá trị truyền vào để gọi hàm đó thực hiện.
+
+slide5:
+- java: Better suited for team development, easy-to-maintain and reusable programs (dễ bảo trị và tái sử dụng), Easier GUI programming
+- OOP: Bao gồm một nhóm các đối tượng hợp tác, Được triển khai bằng ngôn ngữ hướng đối tượng
+- ngôn ngữ hiện đại đều hướng đối tượng: Java, C #, PHP, Perl, C ++, ...
+- Package: bao gồm classes and interface, each package name corresponds with a directory that has the same name. 
+
+slide6:
+- testing: tạo ra looic trong ctrinh
+- debug: fix errors trước khi xuất ctrinh
+- errors: Syntax errors, Runtime error, Logic error
+- các tổ hợp phím: F8: lên 1 bước
+
+slide7:
+- biến có khai báo hằng số: final
+- Thứ tự phép tính: tăng, giảm , nhân, chia, cộng, trừ
+- Ép kiểu: 
++ Implicit Type : Loại đích phải lớn hơn nguồn. int(i) sang float(x).vd: x = i; 
++ Explicit Type : loại đích phải it hơn nguồn.floa sang int. vs: i = (int)x;
+- round: làm tròn số( từ float, double sang int)
+- pow: tính lũy thừa
+- sqrt: tính căn bậc hai
+
+slide8:
+- toán tử so sánh: equals,equalsIgnoreCase
+- if, else if, switch - case
+- loops: while, do - while, for, Nested loop (vòng lặp lồng nhau)
+- break: thoát khỏi vòng lặp
+- continue: dừng vòng lặp hiện tại, và thực hiện vòng lặp tiếp theo khi i tăng lên 1 đv.
+
+slide9: 
+- methods of String: length(), indexOf(), indexOf(,);lastindexOf(),split(kí tự), substring(), trim(),chartAt();
+- StringBuilder: tạo chuỗi linh hoạt hơn, có thể sửa các kí tự trong chuỗi và dung lượng được tăng tự động nếu cần,replace for StringBuffer class in previous version.
++ append: thay đổi giá trị của String
++ insert, replace, delete, deleteCharAt, setCharAt, charAt, substring, substring, toString
+
+slide10:
+- Arrays: 
++ copyOf (name, length()): copy Arrays với size bằng nhau
++ copyOfRange (name,vị trí bắt đầu, vị trí kt)
+
+slide11:
+- inherritance: kế thừa
+- child class: subclass; parent class: superclass
+- Override: ghi đè 1 phương thức,match in name, type, number of arguments and return type 
+- private: cùng class; default: cùng package; protected: cùng package, có kế thừa subclass,public: khác package
+- class extends class; class implements interface; interface extends interface
+- Polymorphism: đa hình, 1 methods của super class, được override từ các subclass với thực thi lệnh khác nhau.
+- cast object (ép kiểu): 
++ lớp con sang lớp cha: Book b = new Book(); Product p = b;
++ lớp cha sang lớp con: Product p = new Book(); Book b = (Book) p;
+- Abstract class: can’t be instantiated (k đc khởi tạo), framework for other classes, inherited, subclass phải overide các abstract methods khi inherited.
+- Abstract methods: chỉ khai báo k triển khai, subclass sẽ triển khai methods này bằng overide
+- final methods không extends
+
+slide12:
+- interface: chứa các methods no implementation (k triển khai), được sd như 1 tham số
+- 1 class có thể implement nhiều interface tạo multiple inheritance, 1 class chỉ extends 1 class
+- abstract class: có đầy đủ thuộc tính giống 1 class khác, có thêm abstract methods
+- java6: interface: chỉ có static constant (biến là hằng số) và abstract methods.
+- java 8: có thể thêm non abstract methods(triển khai câu lệnh) được gọi là default methods và static methods.
+
+slide13:
+- enumeration: khai báo hằng số, được override
+- sử dụng toString methods: trả về chuỗi String cùng tên methods
+- mảng hai chiều: array [row][col]
+
+slide14: 
+- collection:hold one or more other object,similar to arrays, but are more flexible and e efficient than arrays.
+- so sánh collection:
++ array: fixed size, kiểu dữ liệu nguyên thủy (8 kiểu)
++ colections: change size, kiểu dữ liệu wrapper(Integer, Double,...), có thể thêm, xóa, thay thế phần tử trong mảng
+- Arrayist: có thể trỏ tới bất cứ phần tử nào
+- colection:set, list, map.
++ set: không trùng lặp dữ liệu
++ methods: add, get, removed (di chuyển), contains(search)
+Linkedlist: truy cập theo thứ tự, có lk với nhau
+Map: 1 key có 1 value duy nhất, có thể tạo ra 2 key có cùng 1 value
+Syntax of map:
+Map<key, value>
+Map <String,String>
+Map<“1”, “Hello”>
+Hashmap: 1 key chỉ có 1 giá trị, nếu ghi sau bị trùng thì nó sẽ ghi đè lên, giá trị k đc sắp xếp, lộn xộn
+Treemap: map có sắp xếp, có thứ tự
+- lamdas: reduce code duplication,more flexible and easier to maintain.
++ vd: name(arraylist).forEach ( n ->sout(n)); /kiểu code lambdas
+
+slide15:
+- LocalDate, LocalTime, LocalDateTime
++ now, of(parameter), parse(String)
++ getmonth(): trả về giá trị june, july...
++ getmonthvalue(): trả về 1,2,3...
+- isBefore(DateTime), isAfter(DateTime), compareTo(): nếu đúng trả về true, sai trả về false
+ 
+slide16:
+- exceptions: Checked exceptions, Unchecked exceptions(runtime exptions)
+- try - catch: (nếu khai báo final, sẽ duyệt qua lệnh đó rồi mới thông qua ctrinh)
+- don't handle:
++ program maybe crash
++ user may be lost their data
++ some resource can’t reuse
+- throws(ngoại lệ): methods nào gọi throws thì methods đó phải try-catch. 1 methods có thể throw chính mình
+- để xử lý ngoại lệ: loại bỏ methods đó, hoặc try- catch exception
+
+slide17: 
+- file: tạo file, path: đường dẫn đến file
+- createFile: tạo file
+- createDirectory: tạo thư mục
+- đóng thư mục. vd: in.close();
+
+slide18:
+- thread(luồng): thực thi chương trình
++ Default, Java applications use a single thread, called the main thread.always sequential, one statement at a time
++ single-threaded execution can be inefficient (luồng đơn k hiệu quả)
+- Mục đích sd thread:
++ extensive I/O operations
++ GUI application
++ cho 2 hay nhiều người dùng chạy trên máy chủ
+- câu lệnh Thread: run, start, sleep
+- Synchronize threads: đồng bộ hóa chuỗi
++ default, threads areasynchronous.
++ control threads coordination, mainly in order to prevent simultaneous operations on data(đồng bộ để tránh xung độ)
+
+
+
+
+
